@@ -2,10 +2,10 @@
   "Org1MSP": {
     "chaincode": [
       {
-        "name": "mycontract",
-        "path": "chaincode/asset",
+        "name": "helloworld",
+        "path": "chaincode/helloworld",
         "channels": [
-          "mychannel"
+          "mychannel1"
         ],
         "instantiate": true,
         "install": true
