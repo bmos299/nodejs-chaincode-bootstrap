@@ -36,7 +36,7 @@ class HelloworldContract extends Contract {
     async updateHelloworld(ctx, helloworldId, newValue) {
         const exists = await this.helloworldExists(ctx, helloworldId);
         if (!exists) {
-            throw new Error(`The helloworld ${helloworldId} does not exist`);
+            throw new Error(`The helloworld: ${helloworldId} does not exist`);
         }
         const asset = { value: newValue };
         const buffer = Buffer.from(JSON.stringify(asset));
