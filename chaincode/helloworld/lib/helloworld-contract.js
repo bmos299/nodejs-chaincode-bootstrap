@@ -46,7 +46,7 @@ class HelloworldContract extends Contract {
     async deleteHelloworld(ctx, helloworldId) {
         const exists = await this.helloworldExists(ctx, helloworldId);
         if (!exists) {
-            throw new Error(`The helloworld ${helloworldId} does not exist`);
+            throw new Error(`The helloworld: ${helloworldId} does not exist`);
         }
         await ctx.stub.deleteState(helloworldId);
     }
